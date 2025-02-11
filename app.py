@@ -4,7 +4,7 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/')
 message = "Hello, World"
-    return render_template('welcome.html',  
+    return render_template('static/welcome.html',  
                            message=message) 
 
 
