@@ -3,10 +3,11 @@ from flask import Flask
 from flask import render_template 
 
 app = Flask(__name__)
+
 @app.route('/')
 def home():
     message = "Hello, World"
-    return render_template('static/welcome.html', message=message) 
+    return render_template('welcome.html', message=message) 
 
 
 if __name__ == '__main__':
